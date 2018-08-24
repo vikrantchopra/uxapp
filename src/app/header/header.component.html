@@ -1,0 +1,39 @@
+<div id="container">
+  <p-toolbar>
+    <div class="ui-toolbar-group-left">
+      <a routerLink="">
+        Home
+      </a>
+      <a routerLink="/agile">
+        Agile Overview
+      </a>
+      <a routerLink="/resources">
+        Resources
+      </a>
+      <a routerLink="trainings">
+        Trainings
+      </a>
+    </div>
+    <div class="ui-toolbar-group-right">
+      <div class="ui-inputgroup">
+        <button pButton type="button" label="Search"></button>
+        <input type="text" pInputText placeholder="Keyword">
+        <span class="ui-inputgroup-addon">
+          <i class="fa fa-search"></i>
+        </span>
+      </div>
+    </div>
+  </p-toolbar>
+</div>
+
+<p-carousel [value]="training" headerText="Workshop" autoplayInterval="3000" numVisible="3">
+  <ng-template let-item pTemplate="item">
+    <div class="ui-grid ui-grid-responsive">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-2">
+          <img src="assets/images/training/{{item}}.jpg" width="450" height="200">
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
