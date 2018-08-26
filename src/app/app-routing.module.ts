@@ -5,6 +5,7 @@ import {HomeComponent} from './home/home.component';
 import {AgileComponent} from './agile/agile.component';
 import {ResourcesComponent} from './resources/resources.component';
 import {TrainingComponent} from './training/training.component';
+import {TeamComponent} from './team/team.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'trainings',
     component: TrainingComponent
+  },
+  {
+    path: 'team',
+    component: TeamComponent
   }
 ];
 

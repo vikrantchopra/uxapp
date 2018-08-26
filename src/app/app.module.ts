@@ -11,11 +11,13 @@ import { HeaderComponent } from './header/header.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {ToolbarModule} from 'primeng/toolbar';
 import {CardModule} from 'primeng/card';
+import {GalleriaModule} from 'primeng/galleria';
 import { HomeComponent } from './home/home.component';
 import { AgileComponent } from './agile/agile.component';
 import { ResourcesComponent } from './resources/resources.component';
 import { TrainingComponent } from './training/training.component';
 import {TabViewModule} from 'primeng/tabview';
+import { TeamComponent } from './team/team.component';
 
 
 @NgModule({
@@ -25,7 +27,8 @@ import {TabViewModule} from 'primeng/tabview';
     HomeComponent,
     AgileComponent,
     ResourcesComponent,
-    TrainingComponent
+    TrainingComponent,
+    TeamComponent
   ],
   imports: [
     BrowserAnimationsModule,
@@ -34,6 +37,7 @@ import {TabViewModule} from 'primeng/tabview';
     CardModule,
     CarouselModule,
     AppRoutingModule,
+    GalleriaModule,
     InputTextModule,
     TabViewModule,
     ToolbarModule
